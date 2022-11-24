@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "TwitLink",
+  "version": "1.0",
+
+  "description": "Link Twitter/tumblr usernames on Mastodon.",
+
+  "icons": {
+    "48": "icons/elephant_48.png"
+    "96": "icons/elephant_96.png"
+  },
+
+  "content_scripts": [
+    {
+	  "matches": ["http://*/*", "https://*/*"],
+      "js": ["twitlink.js"]
+    }
+  ]
+
+}
+
